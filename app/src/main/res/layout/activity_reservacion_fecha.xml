@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VistasUsuarios.ReservacionFecha">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/IVSiestaLuna"
+            android:layout_width="189dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/siestaluna" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="22dp"
+            android:text="Reservacion"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Fechas disponibles:"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:id="@+id/btnMesAnterior"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="17dp"
+                    app:srcCompat="@drawable/flechaizquierda" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/monthTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        />
+                    <TableLayout
+                        android:id="@+id/calendarTableLayout"
+                        android:layout_width="1.2in"
+                        android:layout_height="0.7in"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/btnMesSig"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/flechaderecha" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Las fechas marcadas en azul ya se encuentran reservadas"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tvFechaIngreso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18sp"
+                android:text="@string/fechaIngreso"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etFechaIngreso"
+                android:layout_width="2in"
+                android:layout_height="50sp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/estilos_bordes"
+                android:ems="10"
+                android:inputType="date"
+                android:textSize="18sp"
+                android:focusableInTouchMode="false"/>
+            <TextView
+                android:id="@+id/tvfechasalida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/fechaSalida"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etFechaSalida"
+                android:layout_width="2in"
+                android:layout_height="50sp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/estilos_bordes"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:focusableInTouchMode="false"/>
+            <TextView
+                android:id="@+id/tvNumPersonas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/numPersonas"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etNumPersonas"
+                android:layout_width="2in"
+                android:layout_height="50sp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/estilos_bordes"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnContinuar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:backgroundTint="#00D2C4"
+                android:text="@string/continuar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:strokeColor="#94000000" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF0000"
+                android:text="@string/cancelar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:strokeColor="#94000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

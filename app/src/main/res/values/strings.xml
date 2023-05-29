@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">SiestaLuna</string>
+    <string name="txtlogin">Inicio de sesión</string>
+    <string name="txtCorreo">Correo</string>
+    <string name="txtContrasena">Contraseña</string>
+    <string name="btnAcceder">Acceder</string>
+    <string name="aux">Auxiliar</string>
+    <string name="btnRegistro">Registrarse</string>
+    <string name="recuperarContra">¿Olvidaste tu contraseña?</string>
+    <string name="registro">Registro</string>
+    <string name="nombre">Nombre(s)</string>
+    <string name="apellido">Apellido(s)</string>
+    <string name="nacionalidad">Nacionalidad</string>
+    <string name="telefono">Telefono</string>
+    <string name="fechaNac">Fecha de nacimiento</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="recuperarContraseña">Recuperar contraseña</string>
+    <string name="enviarCodigo">Enviar código</string>
+    <string name="croquis">Croquis</string>
+    <string name="reservaciones">Ver reservaciones</string>
+    <string name="Habitaciones">Habitaciones</string>
+    <string name="verMas">Ver más</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="habitacion">Habitación</string>
+    <string name="cambiar">Cambiar</string>
+    <string name="planta1">Planta 1</string>
+    <string name="planta2">Planta 2</string>
+    <string name="agregarCarrito">Agregar al carrito</string>
+    <string name="reservar">Reservar</string>
+    <string name="carrito">Carrito</string>
+    <string name="eliminar">Eliminar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fechaIngreso">Fecha de ingreso</string>
+    <string name="fechaSalida">Fecha de salida</string>
+    <string name="numPersonas">Número de personas</string>
+    <string name="continuar">Continuar</string>
+    <string name="numTarjeta">Número de tarjeta</string>
+    <string name="nombreTarjeta">Nombre y apellido</string>
+    <string name="fechaExp">Fecha de expiracion</string>
+    <string name="cvv">CVV</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="confirmacion">Su reservación se realizo exitosamente</string>
+    <string name="regresar">Regresar</string>
+    <string name="historial">Historial</string>
+</resources>

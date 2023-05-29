@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestionCuentas.activity_registro">
+
+    <LinearLayout
+        android:layout_width="2in"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/IVSiestaLuna"
+            android:layout_width="189dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/siestaluna" />
+
+        <TextView
+            android:id="@+id/tvRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:text="@string/registro"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19sp"
+            android:text="@string/nombre"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="2in"
+            android:layout_height="50sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/apellido"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etApellido"
+            android:layout_width="2in"
+            android:layout_height="50sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/txtCorreo"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="2in"
+            android:layout_height="50sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/telefono"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="2in"
+            android:layout_height="50sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:inputType="phone"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvNacionalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/nacionalidad"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etNacionalidad"
+            android:layout_width="2in"
+            android:layout_height="50sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvfechaNac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/fechaNac"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etFechaNac"
+            android:layout_width="2in"
+            android:layout_height="50sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="19sp"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/tvContra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/txtContrasena"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etContra"
+            android:layout_width="2in"
+            android:layout_height="50sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:backgroundTint="#00D2C4"
+                android:text="@string/guardar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:strokeColor="#94000000" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF0000"
+                android:text="@string/cancelar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:strokeColor="#94000000" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

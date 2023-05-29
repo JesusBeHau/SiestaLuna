@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VistasUsuarios.PagoReservacion">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/IVSiestaLuna"
+            android:layout_width="189dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/siestaluna" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="22dp"
+            android:text="Reservacion"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="1in"
+            android:layout_height="1in"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/tarjetaicono"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tvNumTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18sp"
+                android:text="@string/numTarjeta"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etNumTarjeta"
+                android:layout_width="2in"
+                android:layout_height="50sp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/estilos_bordes"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:maxLength="16"/>
+            <TextView
+                android:id="@+id/tvNombreTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/nombreTarjeta"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etNombreTarjeta"
+                android:layout_width="2in"
+                android:layout_height="50sp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/estilos_bordes"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/tvFechaExp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/fechaExp"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etFechaExp"
+                android:layout_width="2in"
+                android:layout_height="50sp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/estilos_bordes"
+                android:ems="10"
+                android:inputType="date"
+                android:textSize="18sp"
+                android:maxLength="5"/>
+            <TextView
+                android:id="@+id/tvCVV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/cvv"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etCVV"
+                android:layout_width="2in"
+                android:layout_height="50sp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/estilos_bordes"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:maxLength="3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnConfirmar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:backgroundTint="#00D2C4"
+                android:text="@string/confirmar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:strokeColor="#94000000" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="25dp"
+                android:backgroundTint="#FF0000"
+                android:text="@string/cancelar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:strokeColor="#94000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

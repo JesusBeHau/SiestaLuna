@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VistasUsuarios.HabitacionActivityUsuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/IVSiestaLuna"
+            android:layout_width="189dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/siestaluna" />
+        <TextView
+            android:id="@+id/tvNumHabitación"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/habitacion"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/ivImagen1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/fotodefecto"/>
+            <ImageView
+                android:id="@+id/ivImagen2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/fotodefecto"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/ivImagen3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/fotodefecto"/>
+            <ImageView
+                android:id="@+id/ivImagen4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/fotodefecto"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"
+            android:text="Tipo: Deluxe/Básica"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvOcupacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"
+            android:text="Personas: habitación para x personas"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"
+            android:text="Precio por día: $xx"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvPlanta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"
+            android:text="Planta: x"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#000000"
+            android:text="Descripción: "
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnAgregarCarrito"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_gravity="center_vertical"
+                android:layout_width="130dp"
+                android:layout_height="56dp"
+                android:backgroundTint="#DDFFFD"
+                android:text="@string/agregarCarrito"
+                android:textColor="#00A0C4"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnReservar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_width="130dp"
+                android:layout_height="56dp"
+                android:backgroundTint="#00D2C4"
+                android:text="@string/reservar"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

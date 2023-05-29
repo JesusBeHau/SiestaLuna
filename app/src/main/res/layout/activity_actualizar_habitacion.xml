@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistasAdmin.ActualizarHabitacion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/IVSiestaLuna"
+            android:layout_width="189dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/siestaluna" />
+
+        <TextView
+            android:id="@+id/tvNumHabitación"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/habitacion"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp" />
+
+        <ImageView
+            android:id="@+id/ivImagen1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/fotodefecto"/>
+
+        <Button
+            android:layout_marginTop="2dp"
+            android:id="@+id/btnCambiarImg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00D2C4"
+            android:text="@string/cambiar"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="#94000000"/>
+
+        <ImageView
+            android:id="@+id/ivImagen2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/fotodefecto"/>
+
+        <Button
+            android:layout_marginTop="2dp"
+            android:id="@+id/btnCambiarImg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00D2C4"
+            android:text="@string/cambiar"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="#94000000"/>
+
+        <ImageView
+            android:id="@+id/ivImagen3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/fotodefecto"/>
+
+        <Button
+            android:layout_marginTop="2dp"
+            android:id="@+id/btnCambiarImg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00D2C4"
+            android:text="@string/cambiar"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="#94000000"/>
+
+        <ImageView
+            android:id="@+id/ivImagen4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/fotodefecto"/>
+
+        <Button
+            android:layout_marginTop="2dp"
+            android:id="@+id/btnCambiarImg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00D2C4"
+            android:text="@string/cambiar"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="#94000000"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp">
+            <TextView
+                android:id="@+id/tvTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#000000"
+                android:text="Tipo:"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/etTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#000000"
+                android:text="Deluxe"
+                android:textSize="18sp"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp">
+            <TextView
+                android:id="@+id/tvOcupacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Número de personas:"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/etOcupacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="20"
+                android:textSize="18sp"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp">
+            <TextView
+                android:id="@+id/tvPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Precio por día: $"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/etPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="400"
+                android:textSize="18sp"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp">
+            <TextView
+                android:id="@+id/tvPlanta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Planta:"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/etPlanta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="20"
+                android:textSize="18sp"
+                android:inputType="number"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Descripción:"
+            android:textSize="18sp"
+            android:layout_marginLeft="50dp"/>
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="*Descripción de la habitacion correspondiente*"
+            android:textSize="18sp"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="30dp"
+            android:imeOptions="actionDone|flagNoEnterAction"
+            android:scrollbars="vertical"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnGuardar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:backgroundTint="#00D2C4"
+                android:text="@string/guardar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:strokeColor="#94000000" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="40dp"
+                android:backgroundTint="#FF0000"
+                android:text="@string/cancelar"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:strokeColor="#94000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

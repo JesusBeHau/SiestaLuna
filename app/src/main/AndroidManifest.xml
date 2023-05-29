@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SiestaLuna"
+        tools:targetApi="31">
+        <activity
+            android:name=".VistasUsuarios.ticketReservacion"
+            android:exported="false" />
+        <activity android:name=".vistasAdmin.ReservacionesAdmin"
+            android:exported="false"/>
+        <activity
+            android:name=".VistasUsuarios.ReservacionesUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".VistasUsuarios.PagoReservacion"
+            android:exported="false" />
+        <activity
+            android:name=".VistasUsuarios.ReservacionFecha"
+            android:exported="false" />
+        <activity
+            android:name=".VistasUsuarios.HabitacionesPorPlanta"
+            android:exported="false" />
+        <activity
+            android:name=".VistasUsuarios.CroquisUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VistasUsuarios.HabitacionActivityUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".vistasAdmin.VistaCroquis"
+            android:exported="false" />
+        <activity
+            android:name=".vistasAdmin.ActualizarHabitacion"
+            android:exported="false" />
+        <activity
+            android:name=".VistasUsuarios.FragmentControllerUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".vistasAdmin.FragmentControllerAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".vistasAdmin.HabitacionActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCJOo6_79wZP_7iT8ks1xPq0S0G6Ry09xc" />
+
+        <activity
+            android:name=".GestionCuentas.activity_recuperarContra"
+            android:exported="false" />
+        <activity
+            android:name=".GestionCuentas.activity_registro"
+            android:exported="false" />
+        <activity
+            android:name=".GestionCuentas.activity_login"
+            android:exported="false" />
+        <activity
+            android:name=".Main.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

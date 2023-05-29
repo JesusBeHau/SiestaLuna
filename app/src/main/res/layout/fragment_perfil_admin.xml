@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistasAdmin.PerfilAdminFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/IVSiestaLuna"
+            android:layout_width="189dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/siestaluna" />
+
+        <ImageView
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/btncerrarsesion"/>
+
+        <TextView
+            android:id="@+id/nombreUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/txtCorreo"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/correoUsuario"
+            android:layout_width="2in"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="#5E5D5D"/>
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/telefono"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/telefonoUsuario"
+            android:layout_width="2in"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="#5E5D5D"/>
+
+        <TextView
+            android:id="@+id/tvNacionalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/nacionalidad"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/nacionalidadUsuario"
+            android:layout_width="2in"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="#5E5D5D"/>
+
+        <TextView
+            android:id="@+id/tvfechaNac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/fechaNac"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/fechaNac"
+            android:layout_width="2in"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/estilos_bordes"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="#5E5D5D"/>
+    </LinearLayout>
+
+</FrameLayout>
